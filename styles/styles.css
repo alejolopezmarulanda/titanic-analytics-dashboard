@@ -1,0 +1,41 @@
+/* ===== GENERAL ===== */
+body {
+    background-color: #ffffff;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* ===== HEADER ===== */
+.header-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.header-subtitle {
+    color: #6c757d;
+    margin-top: 0;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #0d6efd;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+/* ===== KPIs ===== */
+.kpi-label {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.kpi-value {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* ===== SECTIONS ===== */
+.section-title {
+    margin-top: 30px;
+    font-weight: 600;
+}
