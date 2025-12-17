@@ -42,7 +42,7 @@ with col_title:
 with col_social:
     st.markdown("""
     <div class="social-links">
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        <a href="https://github.com/alejolopezmarulanda/titanic-analytics-dashboard" target="_blank">LinkedIn</a>
         <a href="https://github.com" target="_blank">GitHub</a>
     </div>
     """, unsafe_allow_html=True)
