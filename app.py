@@ -2,6 +2,7 @@ import streamlit as st
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+from pathlib import Path
 from src.data_loader import load_data
 from src.model import train_model
 from styles.loader import load_css
@@ -25,7 +26,12 @@ load_css()
 col_logo, col_title, col_social = st.columns([1, 4, 2])
 
 with col_logo:
-    st.image("assets/logo.png", width=90)
+    logo_path = Path("assets/logo.png")
+    if logo_path.exists():
+        st.image(str(logo_path), width=90)
+    else:
+        st.markdown("### 🚢 Titanic Analytics")
+
 
 with col_title:
     st.markdown("""
@@ -38,7 +44,6 @@ with col_social:
     <div class="social-links">
         <a href="https://linkedin.com" target="_blank">LinkedIn</a>
         <a href="https://github.com" target="_blank">GitHub</a>
-        <a href="https://instagram.com" target="_blank">Instagram</a>
     </div>
     """, unsafe_allow_html=True)
 
